@@ -4,7 +4,7 @@ object Josephus {
 
   def findLastManStanding(population: Int, skip: Int) = {
     require(population >= 1)
-    require(skip >= 0)
+    require(skip >= 1)
 
     val men = ListBuffer.range(1, population + 1)
     var idx = 0;

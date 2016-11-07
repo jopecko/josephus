@@ -32,6 +32,9 @@ class ScalaTestWithScalaCheck extends FunSpec with GeneratorDrivenPropertyChecks
          findLastManStanding(41, -1)
       }
     }
+    it("returns last man when k == 1") {
+      findLastManStanding(41, 1) === 41
+    }
     it("solves the Josephus problem") {
       findLastManStanding(41, 3) === 31
     }
